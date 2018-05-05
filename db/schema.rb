@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20180430031659) do
   end
 
   create_table "strokes", force: :cascade do |t|
-    t.integer "value"
+    t.integer "sound"
     t.integer "user_id"
     t.integer "performance_id"
     t.datetime "created_at", null: false
