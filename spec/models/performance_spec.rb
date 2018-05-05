@@ -6,7 +6,7 @@ describe Performance do
   end
 
   it "is considered valid" do
-    expect(Performance.new(attributes)).to be_valid
+    expect(create(:performance)).to be_valid
   end
 
    let(:missing_name) { attributes.except(:name) }
