@@ -6,4 +6,8 @@ Rails.application.routes.draw do
       resources :strokes, only: [:create]
     end
   end
+  # routes for user authentication
+  post '/login', to: 'auth#login'
+  get '/current_user', to: 'auth#currentUser'
+  post '/signup', to: 'auth#signup'
 end
