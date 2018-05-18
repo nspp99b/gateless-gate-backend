@@ -11,7 +11,7 @@ class Api::V1::PerformancesController < ApplicationController
       @performance.save
       render json: @performance, status: 200
     else
-      render json: {error: 'A room with this name already exists!'}
+      render json: {error: 'A room with this name already exists!'}, status: 401
     end
   end
 
